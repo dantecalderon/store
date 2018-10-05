@@ -2,6 +2,6 @@ import { injectGlobal } from 'styled-components'
 
 injectGlobal`
 	body {
-		background: red;
+		background: #f2f8f8;
 	}
 `
