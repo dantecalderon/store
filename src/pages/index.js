@@ -1,8 +1,10 @@
 import React from 'react'
 
 import Footer from '../components/Footer'
+import Layout from '../components/Layouts/Default'
 
-export default () => <div>
-	Hello world!
-	<Footer />
-</div>
+export default () => (
+	<Layout>
+		<Footer/>
+	</Layout>
+)
