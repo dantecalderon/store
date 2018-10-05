@@ -1,14 +1,10 @@
 import React from 'react'
 
 import Footer from '../components/Footer'
+import Layout from '../components/Layouts/Default'
 
-function holaMundo (){
-	console.log('Hola Mundo')
-	if(this == 8) {
-		return 0
-	}
-}
-export default () => <div>
-	Hello world!
-	<Footer />
-</div>
+export default () => (
+	<Layout>
+		<Footer/>
+	</Layout>
+)
