@@ -5,6 +5,7 @@ import Layout from '../components/Layouts/Default'
 
 export default () => (
 	<Layout>
+		<h1>Gatsby Store</h1>
 		<Footer/>
 	</Layout>
 )

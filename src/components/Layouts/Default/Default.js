@@ -6,7 +6,6 @@ class DefaultLayout extends React.Component {
 	render() {
 		return(
 			<div>
-				<a class="pure-button pure-button-primary" href="#">A Primary Button</a>
 				{ this.props.children }
 			</div>
 		)
