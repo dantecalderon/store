@@ -1,11 +1,15 @@
 import React from 'react'
-import '../../../styles/global.js'
 import 'purecss/build/pure-min.css'
+
+import '../../../styles/global.js'
+import Navbar from '../../Navbar'
+
 
 class DefaultLayout extends React.Component {
 	render() {
 		return(
 			<div>
+				<Navbar/>
 				{ this.props.children }
 			</div>
 		)
