@@ -20,6 +20,7 @@ const Item = styled.div`
 	img {
 		width: 100%;
 		outline: none;
+		display: block;
 	}
 `
 

@@ -71,13 +71,13 @@ export default props => (
 						<Item to='/'>INICIO</Item>
 					</ItemWrapper>
 					<ItemWrapper>
-						<Item to='/shop'>TIENDA</Item>
+						<Item to='/tienda'>TIENDA</Item>
 					</ItemWrapper>
 					<ItemWrapper>
 						<Item to='/nosotros'>NOSOTROS</Item>
 					</ItemWrapper>
 					<ItemWrapper>
-						<Item>CONTACTO</Item>
+						<Item to='/contacto'>CONTACTO</Item>
 					</ItemWrapper>
 				</List>
 			</Wrapper>
