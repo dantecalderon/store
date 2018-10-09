@@ -68,16 +68,16 @@ export default props => (
 				<Logo/>			
 				<List>		
 					<ItemWrapper>
-						<Item to='/'>HOME</Item>
+						<Item to='/'>INICIO</Item>
 					</ItemWrapper>
 					<ItemWrapper>
-						<Item to='/shop'>SHOP</Item>
+						<Item to='/shop'>TIENDA</Item>
 					</ItemWrapper>
 					<ItemWrapper>
-						<Item>COLLECTION</Item>
+						<Item>NOSOTROS</Item>
 					</ItemWrapper>
 					<ItemWrapper>
-						<Item>CART</Item>
+						<Item>CONTACTO</Item>
 					</ItemWrapper>
 				</List>
 			</Wrapper>
