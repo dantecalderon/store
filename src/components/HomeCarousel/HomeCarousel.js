@@ -12,7 +12,7 @@ import img4 from '../../assets/images/home_carousel/carousel4.jpg'
 import img5 from '../../assets/images/home_carousel/carousel5.jpg'
 
 const Container = styled.div`
-	
+	background: #f9f2e8;
 `
 
 const Item = styled.div`

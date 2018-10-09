@@ -9,7 +9,6 @@ export default () => (
 	<Layout>
 		<Carousel/>
 		<Discover/>
-		<h1>Gatsby Store</h1>
 		<Footer/>
 	</Layout>
 )
