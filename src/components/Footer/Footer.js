@@ -2,16 +2,27 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Wrapper from '../Wrapper'
+import Logo from '../Logo'
 
 const Container = styled.div`
 	background: #24292E;
 	color: white;
+	padding: 20px 10px 24px;
+`
+
+const Copy = styled.p`
+	text-align: center;
+	color: #888f97;
+	font-size: 14px;
 `
 
 export default props => (
 	<Container>
-		<Wrapper>
-			<p>&copy; Modas Elengant 2018 - All rights reserved</p>
+		<Wrapper 
+			flexDirection='column'
+			justifyContent='center'>
+			<Logo light/>
+			<Copy>&copy; Modas Elengant 2018 - All rights reserved</Copy>
 		</Wrapper>
 	</Container>
 )

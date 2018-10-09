@@ -16,9 +16,11 @@ const Container = styled.nav`
 
 const List = styled.ul`
 	margin: 0;
+	margin-left: 20px;
 	list-style: none;
 	padding: 0;
 	display: flex;
+	align-items: center;
 `
 
 const ItemWrapper = styled.li`
@@ -63,8 +65,8 @@ export default props => (
 	<ThemeProvider theme={ theme }>
 		<Container>
 			<Wrapper>
+				<Logo/>			
 				<List>		
-					<Logo/>			
 					<ItemWrapper>
 						<Item to='/'>HOME</Item>
 					</ItemWrapper>
