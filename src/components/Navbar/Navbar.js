@@ -74,7 +74,7 @@ export default props => (
 						<Item to='/shop'>TIENDA</Item>
 					</ItemWrapper>
 					<ItemWrapper>
-						<Item>NOSOTROS</Item>
+						<Item to='/nosotros'>NOSOTROS</Item>
 					</ItemWrapper>
 					<ItemWrapper>
 						<Item>CONTACTO</Item>
