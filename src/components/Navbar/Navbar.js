@@ -10,7 +10,7 @@ const Container = styled.nav`
 	color: ${ props => props.theme.textColor };
 	font-family: 'Oswald', sans-serif;
 	height: 80px;
-	padding: 0 10px;
+	padding: 0 22px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 `
 
