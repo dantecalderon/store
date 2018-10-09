@@ -35,29 +35,28 @@ export default props => (
 		<Section className="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4">
 			<Title>¿Tienes algúna pregunta?</Title>
 			<Items>
-				<Item>Tel. 928124770</Item>
-				<Item>Email. dantehemerson@gmail.com</Item>
+				<Item>Tel: +51 928124770</Item>
+				<Item>E-Mail: dantehemerson@gmail.com</Item>
 				<Item>Direccion: Av. Volteando la Esquina 223</Item>
 			</Items>
 		</Section>
 		<Section className="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4">
 			<Title>Nosotros</Title>		
 			<Items>
-				<Item>Tel. 928124770</Item>
-				<Item>Email. dantehemerson@gmail.com</Item>
-				<Item>Direccion: Av. Volteando la Esquina 223</Item>
+				<Item>Acerca de nosotros</Item>
+				<Item>Historia</Item>			
 			</Items>
 		</Section>			
 		<Section className="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4">
-			<Title>Nosotros</Title>		
+			<Title>Menu</Title>		
 			<Items>
-				<Item>Tel. 928124770</Item>
-				<Item>Email. dantehemerson@gmail.com</Item>
-				<Item>Direccion: Av. Volteando la Esquina 223</Item>
+				<Item>Inicio</Item>
+				<Item>Acerca de</Item>
+				<Item>Contacto</Item>
 			</Items>
 		</Section>
 		<Section className="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4">
-			<Title>Servicio al cliente</Title>		
+			<Title>Siguenos en redes sociales</Title>		
 			<Items>
 				<Item>Tel. 928124770</Item>
 				<Item>Email. dantehemerson@gmail.com</Item>
