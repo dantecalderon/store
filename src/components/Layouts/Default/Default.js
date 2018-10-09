@@ -11,7 +11,7 @@ class DefaultLayout extends React.Component {
 			<div>
 				<Helmet>         
           <title>Simple Store</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i|Oswald:400,500,600,700" rel="stylesheet"/>
         </Helmet>
 				<Navbar/>
 				{ this.props.children }
