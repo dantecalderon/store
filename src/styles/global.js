@@ -10,4 +10,11 @@ injectGlobal`
 	.pure-g, .pure-g [class*=pure-u] {	
 		font-family: 'Open sans', sans-serif !important;
 	}
+	.slick-prev {
+		left: 20px !important;
+		z-index: 2;
+	}
+	.slick-next {
+		right: 20px !important;
+	}
 `
