@@ -9,6 +9,8 @@ const Container = styled.div`
  	display: flex !important;
  	flex-direction: column;
  	justify-content: flex-start;
+ 	background: #24292e;
+ 	color: white;
 `
 
 const Item = styled.div`
@@ -30,7 +32,10 @@ const Value = styled.p`
 	font-size: 14px;	
 	a {
 		text-decoration: none;
-		color: inherit;
+		color: #D5B282;
+		&:hover{
+			color: #c19a67;
+		}
 	}
 `
 
@@ -53,11 +58,11 @@ const LogoWrapper = styled.div`
 export default props => (
 	<Container className={ props.className }>
 		<LogoWrapper>
-			<Logo/>
+			<Logo light/>
 		</LogoWrapper>
 		<Item>
 			<LogoItem>
-				<img src='https://icongr.am/clarity/mobile-phone.svg'/>
+				<img src='https://icongr.am/clarity/mobile-phone.svg?color=ffffff'/>
 			</LogoItem>
 			<ItemContent>
 				<ItemTitle>TELÉFONO</ItemTitle>
@@ -67,7 +72,7 @@ export default props => (
 		</Item>
 		<Item>
 			<LogoItem>
-				<img src='https://icongr.am/clarity/map-marker.svg'/>
+				<img src='https://icongr.am/clarity/map-marker.svg?color=ffffff'/>
 			</LogoItem>
 			<ItemContent>
 				<ItemTitle>DIRECCIÓN</ItemTitle>
@@ -76,7 +81,7 @@ export default props => (
 		</Item>
 		<Item>
 			<LogoItem>
-				<img src='https://icongr.am/clarity/email.svg'/>
+				<img src='https://icongr.am/clarity/email.svg?color=ffffff'/>
 			</LogoItem>
 			<ItemContent>
 				<ItemTitle>EMAIL</ItemTitle>
@@ -85,7 +90,7 @@ export default props => (
 		</Item>
 		<Item>
 			<LogoItem>
-				<img src='https://icongr.am/clarity/group.svg'/>
+				<img src='https://icongr.am/clarity/group.svg?color=ffffff'/>
 			</LogoItem>
 			<ItemContent>
 				<ItemTitle>REDES SOCIALES</ItemTitle>

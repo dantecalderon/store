@@ -10,6 +10,7 @@ const Title = styled.h3`
 	font-size: 28px;
 	text-align: center;
 	padding: 0 23px;
+	margin-top: 60px;
 `
 
 export default props => (

@@ -47,7 +47,7 @@ const TitleSection = styled.h3`
 	text-align: center;
 	padding: 0 23px;
 	text-transform: uppercase;
-	margin: 40px 0 15px;
+	margin: 40px 0 30px;
 `
 
 class Contacto extends React.Component {
