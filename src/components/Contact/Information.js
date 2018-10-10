@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Logo from '../Logo'
 
 const Container = styled.div`
- 	padding: 20px 40px;
+ 	padding: 20px 40px; 	
  	box-sizing: border-box;
  	display: flex !important;
  	flex-direction: column;

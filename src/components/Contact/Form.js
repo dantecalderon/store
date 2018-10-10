@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Input from './Input'
 
 const Container = styled.div`
-	padding: 0 20px;
+	padding: 40px 20px 0;
 	box-sizing: border-box;
 	background: #f6f6f6;	
 `
