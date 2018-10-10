@@ -78,37 +78,41 @@ const Button = styled(Link)`
 	margin-bottom: 15px;	
 `
 
-export default () => (
-	<Layout>
-		<HeaderContainer>
-			<Title>ACERCA DE NOSOTROS</Title>
-		</HeaderContainer>
-		<AboutText>
-			<p><span>M</span><b>odas Elegant</b> contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. <b>Richard McClintock</b>, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus <b>Bonorum</b> et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32</p>
-			<p> El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por <b>Cicero</b> son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>		
-		</AboutText>
-		<Wrapper
-			maxWidth='1720px'
-			flexDirection='column'>
-			<Section className='pure-g'>
-				<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>
-					<img src={ tools }/>				
-				</div>
-				<SectionContentutil className='pure-u-1-1 pure-u-lg-1-2'>
-					<SectionTitle>Fabricación propia</SectionTitle>
-					<SectionDescription>La industria de la moda tradicional busca constantemente mayores márgenes de ganancia, olvidando convenientemente los valores sociales fundamentales, como la compensación de los trabajadores y las condiciones de trabajo. Nos negamos a ser parte de eso. Todas nuestras prendas se producen en nuestras plantas de propiedad y operación en Sri Lanka. Nos oponemos directamente al trabajo infantil y nuestros empleados son bien compensados ​​y tratados con respeto.</SectionDescription>
-				</SectionContentutil>
-			</Section>
-			<Section className='pure-g'>
-				<SectionContentutil className='pure-u-1-1 pure-u-lg-1-2'>
-					<SectionTitle>Tela de buena Calidad</SectionTitle>
-					<SectionDescription>Ofrecemos una forma sostenible de ordenar y vestir moda. Todas nuestras emisiones de CO2 se compensan al 100% al sembrar un nuevo bosque lluvioso en Sri Lanka, lo que hace que la compañía sea neutral en carbono. Nuestras instalaciones de producción están revisadas y certificadas por GOTS (Global Organic Textile Standard) que garantiza estándares muy altos, tanto social como ambientalmente. Un beneficio adicional es que nuestra ropa no es "moda rápida", sino algo que se puede usar año tras año.</SectionDescription>
-						<Button>Leer mas »</Button>
-				</SectionContentutil>
-				<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>
-					<img src={ tela }/>				
-				</div>
-			</Section>
-		</Wrapper>
-	</Layout>
-)
+class Nosotros extends React.Component {
+	render() {		
+		return (
+			<Layout>
+				<HeaderContainer>
+					<Title>ACERCA DE NOSOTROS</Title>
+				</HeaderContainer>
+				<AboutText>
+					<p><span>M</span><b>odas Elegant</b> contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. <b>Richard McClintock</b>, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus <b>Bonorum</b> et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32</p>
+					<p> El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por <b>Cicero</b> son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>		
+				</AboutText>
+				<Wrapper
+					maxWidth='1720px'
+					flexDirection='column'>
+					<Section className='pure-g'>
+						<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>
+							<img src={ tools }/>				
+						</div>
+						<SectionContentutil className='pure-u-1-1 pure-u-lg-1-2'>
+							<SectionTitle>Fabricación propia</SectionTitle>
+							<SectionDescription>La industria de la moda tradicional busca constantemente mayores márgenes de ganancia, olvidando convenientemente los valores sociales fundamentales, como la compensación de los trabajadores y las condiciones de trabajo. Nos negamos a ser parte de eso. Todas nuestras prendas se producen en nuestras plantas de propiedad y operación en Sri Lanka. Nos oponemos directamente al trabajo infantil y nuestros empleados son bien compensados ​​y tratados con respeto.</SectionDescription>
+						</SectionContentutil>
+					</Section>
+					<Section className='pure-g'>
+						<SectionContentutil className='pure-u-1-1 pure-u-lg-1-2'>
+							<SectionTitle>Tela de buena Calidad</SectionTitle>
+							<SectionDescription>Ofrecemos una forma sostenible de ordenar y vestir moda. Todas nuestras emisiones de CO2 se compensan al 100% al sembrar un nuevo bosque lluvioso en Sri Lanka, lo que hace que la compañía sea neutral en carbono. Nuestras instalaciones de producción están revisadas y certificadas por GOTS (Global Organic Textile Standard) que garantiza estándares muy altos, tanto social como ambientalmente. Un beneficio adicional es que nuestra ropa no es "moda rápida", sino algo que se puede usar año tras año.</SectionDescription>
+								<Button>Leer mas »</Button>
+						</SectionContentutil>
+						<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>
+							<img src={ tela }/>				
+						</div>
+					</Section>
+				</Wrapper>
+			</Layout>
+		)
+	}
+}

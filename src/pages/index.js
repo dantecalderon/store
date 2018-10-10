@@ -4,9 +4,15 @@ import Layout from '../components/Layouts/Default'
 import Carousel from '../components/HomeCarousel'
 import Discover from '../components/Discover'
 
-export default () => (
-	<Layout>
-		<Carousel/>
-		<Discover/>
-	</Layout>
-)
+class Index extends React.Componet {	
+	render() {
+		return (
+			<Layout>
+				<Carousel/>
+				<Discover/>
+			</Layout>
+		)		
+	}
+} 
+
+export default Index 
