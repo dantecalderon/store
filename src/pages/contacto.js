@@ -5,6 +5,7 @@ import Layout from '../components/Layouts/Default'
 import Wrapper from '../components/Wrapper'
 import Form from '../components/Contact/Form'
 import Information from '../components/Contact/Information'
+import Maps from '../components/Contact/Maps'
 
 import backgroundHeader from '../assets/images/contact/background.jpg'
 
@@ -37,7 +38,7 @@ const HeaderContent = styled.div`
 `
 
 const InformationWrapper = styled.div`
-
+	width: 100%;
 `
 
 class Contacto extends React.Component {
@@ -53,10 +54,11 @@ class Contacto extends React.Component {
 				</HeaderContainer>
 				<Wrapper>
 					<InformationWrapper className='pure-g'>
-						<Information/>
-						<Form/>						
+						<Information className='pure-u-1-2'/>
+						<Form className='pure-u-1-2'/>						
 					</InformationWrapper>
 				</Wrapper>
+				<Maps/>
 			</Layout>
 		)
 	}

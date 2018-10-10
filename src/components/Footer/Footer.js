@@ -9,7 +9,7 @@ import Menu from './Menu'
 const Container = styled.div`
 	background: #24292E;
 	color: white;
-	padding: 20px 22px 24px;
+	padding: 30px 22px 24px;
 `
 
 const Copy = styled.p`
