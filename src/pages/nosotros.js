@@ -36,7 +36,7 @@ const AboutText = styled.div`
 			font-size: 300%;
 			color: #2499B7;
 			font-weight: bold;
-			line-height: 1.3;
+			line-height: 0.3;
 		}
 	}
 `
