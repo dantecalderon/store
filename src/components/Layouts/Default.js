@@ -1,11 +1,11 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
 
-import '../../../styles/global.js'
+import '../../styles/global.js'
 import 'purecss/build/grids-min.css' // Only for this is purecss
 import 'purecss/build/grids-responsive-min.css'
-import Navbar from '../../Navbar'
-import Footer from '../../Footer'
+import Navbar from '../Navbar'
+import Footer from '../Footer'
 
 class DefaultLayout extends React.Component {
 	render() {

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
 
-import Logo from '../Logo'
-import Wrapper from '../Wrapper'
+import Logo from './Logo'
+import Wrapper from './Wrapper'
 
 const Container = styled.nav`
 	background: ${ props => props.theme.background };
