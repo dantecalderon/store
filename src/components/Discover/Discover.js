@@ -20,7 +20,7 @@ const Title = styled.h3`
 	width: 100%;
 `
 
-const CategoriesWrapper = styled.div`
+const CategoriesWrapper = styled.section`
 	justify-content: center;
 `
 

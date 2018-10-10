@@ -20,7 +20,8 @@ const Title = styled.h1`
 	font-family: 'Oswald';
 	margin: 0;
 	font-size: 45px;
-	text-shadow: 0 0 30px black, 1px 1px 0  #6C6C6C, -1px -1px 0 #6C6C6C;
+	text-shadow: 0 1px 2px #101820;
+	background: rgba(0, 0, 0, 0.31);
 	padding: 140px 0 70px;
 `
 
