@@ -1,6 +1,6 @@
 backend:
   name: github
-  backend: dantecalderon/store
+  repo: dantecalderon/store
 
 media_folder: static/assets
 public_folder: assets
