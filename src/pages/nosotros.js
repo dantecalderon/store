@@ -59,7 +59,7 @@ const SectionTitle = styled.h2`
 `
 const SectionDescription = styled.p`
 	position: relative;  
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.9;  
 `
 
@@ -72,7 +72,7 @@ const Button = styled(Link)`
 	background: #24292e;	
 	color: white;
 	text-decoration: none;
-	padding: 14px 26px;
+	padding: 14px 40px;
 	font-size: 13px;
 	display: inline-block;
 	margin-bottom: 15px;	

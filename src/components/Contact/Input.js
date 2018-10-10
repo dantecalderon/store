@@ -26,6 +26,7 @@ const TextArea = styled.textarea`
 	border: 2px solid black;
 	font-size: 16px;
 	font-weight: 400;
+	font-family: 'Open Sans';
 	resize: vertical;
 	&:focus {
 		outline: none;
