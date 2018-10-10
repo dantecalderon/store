@@ -32,7 +32,7 @@ export default () => (
 			<CategoriesWrapper className="pure-g">
 				<div className="pure-u-1-1 pure-u-sm-19-24 pure-u-md-1-3">
 					<Category
-						title='Ternos' 
+						title='Trajes' 
 						to='/ternos'
 						image={ ternos } />
 				</div>
