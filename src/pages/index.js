@@ -4,7 +4,7 @@ import Layout from '../components/Layouts/Default'
 import Carousel from '../components/HomeCarousel'
 import Discover from '../components/Discover'
 
-class Index extends React.Componet {	
+class Index extends React.Component {	
 	render() {
 		return (
 			<Layout>
@@ -15,4 +15,4 @@ class Index extends React.Componet {
 	}
 } 
 
-export default Index 
+export default Index
