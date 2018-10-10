@@ -5,7 +5,8 @@ import Input from './Input'
 
 const Container = styled.div`
 	padding: 0 20px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
+	background: #f6f6f6;	
 `
 
 const Button = styled.button`
@@ -23,10 +24,10 @@ const Button = styled.button`
 
 export default props => (
 	<Container className={ props.className }>
-		<Input title='Nombre completo'/>
-		<Input title='E-Mail'/>
+		<Input title='Nombre completo*'/>
+		<Input title='E-Mail*'/>
 		<Input title='Asunto'/>
-		<Input title='Mensaje' textArea/>
+		<Input title='Mensaje*' textArea/>
 		<Button>Enviar</Button>
 	</Container>
 )

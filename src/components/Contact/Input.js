@@ -10,26 +10,35 @@ const Container = styled.div`
 const Label = styled.label`
 	font-family: 'Oswald';
 	margin-bottom: 3px;
+	font-size: 15px;
+	color: #333845;
+	font-weight: 600;
 `
+
 const Input = styled.input`
 	padding: 11px 10px;
-	border: 2px solid black;
-	font-size: 16px;
-	font-weight: 400;
+	border: 1px solid #d3d3d3;
+	color: #1f232f !important;
+	font-family: 'Open Sans';
+	font-size: 14px !important;
+	font-weight: 600;
 	&:focus {
 		outline: none;
+		border-color: #1f232f !important;
 	}
 `
 
 const TextArea = styled.textarea`
 	padding: 11px 10px;
-	border: 2px solid black;
-	font-size: 16px;
-	font-weight: 400;
+	border: 1px solid #d3d3d3;
+	color: #1f232f !important;
 	font-family: 'Open Sans';
 	resize: vertical;
+	font-size: 14px !important;
+	font-weight: 600;
 	&:focus {
 		outline: none;
+		border-color: #1f232f !important;
 	}
 `
 
