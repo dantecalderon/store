@@ -3,6 +3,9 @@ module.exports = {
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-netlify-cms',
 		{
+      resolve: 'gatsby-plugin-styled-components'
+    },
+		{
 		  resolve: 'gatsby-plugin-netlify',
 		  options: {		    		  
 		    mergeSecurityHeaders: true,
