@@ -17,6 +17,7 @@ collections:
       - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
       - { label: Categorias (Separar con comas), name: categories, widget: list }
       - { label: Color, name: color}
+      - { label: Patron, name: pattern}
       - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }
