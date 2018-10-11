@@ -2,16 +2,16 @@ backend:
   name: github
   repo: dantecalderon/store
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/uploads
+public_folder: static/uploads
 
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: _products
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: title, label: "Nombre del producto:" }
+      - { name: path, label: Path, default: "{{slug}}" }
+      - { name: description, label: "Descripción del producto:", widget: markdown }
