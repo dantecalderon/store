@@ -2,7 +2,7 @@ backend:
   name: github
   repo: dantecalderon/store
 
-media_folder: static/uploads
+media_folder: src/assets
 public_folder: static/uploads
 
 collections:
