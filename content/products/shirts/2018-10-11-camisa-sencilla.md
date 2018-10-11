@@ -10,6 +10,6 @@ sizes:
   - m
   - xl
 thumbnail: /static/uploads/2831-herrskjorta-huesa-dark-blue-12533.jpg
-description: 'Oops, you''ve missed a required field. Please complete before saving.'
 ---
+'Oops, you''ve missed a required field. Please complete before saving.'
 

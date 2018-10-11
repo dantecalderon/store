@@ -10,6 +10,6 @@ sizes:
   - s
   - m
 thumbnail: /static/uploads/shirt-denim-square-indigo-detail-1697765.jpg
-description: Un producto de buena calidad y muy **elegante**
 ---
+Un producto de buena calidad y muy **elegante**
 
