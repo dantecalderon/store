@@ -8,7 +8,7 @@ public_folder: static/uploads
 collections:
   - name: shirts
     label: Camisas
-    folder: content/products
+    folder: content/products/shirts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -24,7 +24,7 @@ collections:
 
   - name: pants
     label: Pantalones
-    folder: content/products
+    folder: content/products/pants
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -39,7 +39,7 @@ collections:
 
   - name: suits
     label: Trajes Completos
-    folder: content/products
+    folder: content/products/suits
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -52,9 +52,9 @@ collections:
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }
 
-  - name: jaquet
+  - name: jaquets
     label: Sacos
-    folder: content/products
+    folder: content/products/jaquets
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -67,9 +67,9 @@ collections:
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }
 
-  - name: corbatas
+  - name: ties
     label: Corbatas
-    folder: content/products
+    folder: content/products/ties
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
