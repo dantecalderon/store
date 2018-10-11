@@ -29,8 +29,8 @@ const Title = styled.h1`
 const AboutText = styled.div`
 	max-width: 800px;
 	padding: 0 23px;
-	margin: 0 auto;
-	margin-bottom: 60px;
+	margin: 35px auto 30px;
+
 	p {
 		line-height: 1.6;
 		& > span:first-child {			
@@ -80,9 +80,21 @@ const Button = styled(Link)`
 `
 
 const VideoContainer = styled.div`
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background: #f5f4f2;	
+	padding-top: 35px;
+	padding-bottom: 35px;
+	position: relative;
+	overflow: hidden;
+	.background {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url(${backgroundHeader});
+		background-size: cover;
+		background-position: center center;
+		filter: blur(6px);
+	}
 
 `
 
@@ -99,6 +111,8 @@ class Nosotros extends React.Component {
 					<p> El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por <b>Cicero</b> son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>		
 				</AboutText>
 				<VideoContainer>
+					<div className="background">
+					</div>
 					<Video/>
 				</VideoContainer>
 				<Wrapper

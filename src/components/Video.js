@@ -11,7 +11,8 @@ const VideoContainer = styled.div`
 	position: relative;
 	padding-bottom: 56.25%;
 	padding-top: 30px; height: 0; overflow: hidden;	
-	box-shadow: 0 0 20px black;
+  box-shadow: 0px 25px 80px -7px rgba(0,0,0,0.8);
+
 	iframe, object, embed {
 		position: absolute;
 		top: 0;
@@ -24,7 +25,13 @@ const VideoContainer = styled.div`
 export default props => (
 	<Container>
 		<VideoContainer>
-			<iframe width="860" height="315" src="https://www.youtube.com/embed/5XV6Ie0hZt8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe				
+				width="860" 
+				height="315" 
+				src="https://www.youtube.com/embed/5XV6Ie0hZt8?rel=0" 
+				frameborder="0" 
+				allow="autoplay; encrypted-media" 
+				allowfullscreen></iframe>
 		</VideoContainer>
 	</Container>
 )

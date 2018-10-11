@@ -6,8 +6,8 @@ media_folder: content/uploads
 public_folder: static/uploads
 
 collections:
-  - name: men
-    label: Hombres
+  - name: shirts
+    label: Camisas
     folder: content/products
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -16,13 +16,13 @@ collections:
       # - { name: path, label: Path, default: "{{slug}}" }
       - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
       - { label: Categorias (Separar con comas), name: categories, widget: list }
-      # - { label: Colores (Separar con comas), name: colors, widget: list }
+      - { label: Color, name: color}
       - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }
 
-  - name: women
-    label: Mujeres
+  - name: pants
+    label: Pantalones
     folder: content/products
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -31,7 +31,52 @@ collections:
       # - { name: path, label: Path, default: "{{slug}}" }
       - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
       - { label: Categorias (Separar con comas), name: categories, widget: list }
-      # - { label: Colores (Separar con comas), name: colors, widget: list }
+      - { label: Color, name: color }
+      - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
+      - { label: "Imagen Principal", name: thumbnail, widget: image }
+      - { name: description, label: "Descripción del producto", widget: markdown }
+
+  - name: suits
+    label: Trajes Completos
+    folder: content/products
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: title, label: "Nombre del producto" }
+      - { name: path, label: Path, default: "{{slug}}" }
+      - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
+      - { label: Categorias (Separar con comas), name: categories, widget: list }
+      - { label: Color, name: color }
+      - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
+      - { label: "Imagen Principal", name: thumbnail, widget: image }
+      - { name: description, label: "Descripción del producto", widget: markdown }
+
+  - name: jaquet
+    label: Sacos
+    folder: content/products
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: title, label: "Nombre del producto" }
+      - { name: path, label: Path, default: "{{slug}}" }
+      - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
+      - { label: Categorias (Separar con comas), name: categories, widget: list }
+      - { label: Color, name: color }
+      - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
+      - { label: "Imagen Principal", name: thumbnail, widget: image }
+      - { name: description, label: "Descripción del producto", widget: markdown }
+
+  - name: corbatas
+    label: Corbatas
+    folder: content/products
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: title, label: "Nombre del producto" }
+      - { name: path, label: Path, default: "{{slug}}" }
+      - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
+      - { label: Categorias (Separar con comas), name: categories, widget: list }
+      - { label: Color, name: color }
       - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }
