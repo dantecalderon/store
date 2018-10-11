@@ -16,8 +16,8 @@ collections:
       # - { name: path, label: Path, default: "{{slug}}" }
       - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
       - { label: Categorias (Separar con comas), name: categories, widget: list }
-      - { label: Colores (Separar con comas), name: colors, widget: list }
-      - { label: Tamaños (Separar con comas), name: sizes, widget: list }
+      # - { label: Colores (Separar con comas), name: colors, widget: list }
+      - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }
 
@@ -31,7 +31,7 @@ collections:
       # - { name: path, label: Path, default: "{{slug}}" }
       - { name: price, label: "Precio", widget: number, valueType: float, min: 0, max: 9999, default: "0.0", required: true }
       - { label: Categorias (Separar con comas), name: categories, widget: list }
-      - { label: Colores (Separar con comas), name: colors, widget: list }
-      - { label: Tamaños (Separar con comas), name: sizes, widget: list }
+      # - { label: Colores (Separar con comas), name: colors, widget: list }
+      - { label: Tamaños Disponibles (Separar con comas), name: sizes, widget: list }
       - { label: "Imagen Principal", name: thumbnail, widget: image }
       - { name: description, label: "Descripción del producto", widget: markdown }

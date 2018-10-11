@@ -4,12 +4,13 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layouts/Default'
 import Wrapper from '../components/Wrapper'
+import Video from '../components/Video'
 import backgroundHeader from '../assets/images/about/maquina-de-coser-by-annie-spratt.jpg'
 import tools from '../assets/images/about/tools.jpg'
 import tela from '../assets/images/about/tela.jpg'
 
 const HeaderContainer = styled.div`
-	background: url(${backgroundHeader});
+	background: url(${backgroundHeader});	
 	text-align: center;
 	background-size: cover;
   background-position: center center;
@@ -78,6 +79,13 @@ const Button = styled(Link)`
 	margin-bottom: 15px;	
 `
 
+const VideoContainer = styled.div`
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #f5f4f2;	
+
+`
+
 class Nosotros extends React.Component {
 	render() {		
 		return (
@@ -85,10 +93,14 @@ class Nosotros extends React.Component {
 				<HeaderContainer>
 					<Title>ACERCA DE NOSOTROS</Title>
 				</HeaderContainer>
+				
 				<AboutText>
 					<p><span>M</span><b>odas Elegant</b> contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. <b>Richard McClintock</b>, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus <b>Bonorum</b> et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32</p>
 					<p> El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por <b>Cicero</b> son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>		
 				</AboutText>
+				<VideoContainer>
+					<Video/>
+				</VideoContainer>
 				<Wrapper
 					maxWidth='1720px'
 					flexDirection='column'>
