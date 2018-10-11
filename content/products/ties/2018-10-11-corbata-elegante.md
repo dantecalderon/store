@@ -11,6 +11,5 @@ sizes:
   - s
   - m
 thumbnail: /static/uploads/mens-shirt-siruela-pink-545-jpg.jpeg
-description: Una hermosa corbata
 ---
-
+Corbata muy elegante colo negro que le ayudará a verse mejor
