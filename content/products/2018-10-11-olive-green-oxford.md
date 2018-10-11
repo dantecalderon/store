@@ -5,7 +5,6 @@ categories:
   - office
   - manga larga
   - franela
-  - ''
 color: '#da0'
 sizes:
   - s

@@ -3,7 +3,6 @@ title: Camisa de vestir esmoquin vestido ala cuello
 price: 100
 categories:
   - cuello ala
-  - ''
 color: white
 sizes:
   - s
