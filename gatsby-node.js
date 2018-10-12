@@ -54,10 +54,12 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
 	if(node.internal.type === 'MarkdownRemark') {
 		const fileNode = getNode(node.parent)
 		if(fileNode.sourceInstanceName === 'products') {
-
-			slug = `/product/${slugify(frontmatter.title,  {
+			// Slug format: [ProductName]-[uuid(first 8 digits)] i.e: name-of-product-5a323j23
+			const title = slugify(frontmatter.title,  {
 				lower: true
-			})}-${node.id.split('-')[0]}`
+			})			
+			const uuidMinimized = node.id.split('-')[0]
+			slug = `/product/${title}-${uuidMinimized}`
 			createNodeField({
 				node,
 				name: 'slug',
