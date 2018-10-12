@@ -1,6 +1,7 @@
 const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
+const slugify = require('slugify')
 
 exports.createPages = ({ graphql, actions }) => {
 	const { createPage } = actions
@@ -53,7 +54,10 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
 	if(node.internal.type === 'MarkdownRemark') {
 		const fileNode = getNode(node.parent)
 		if(fileNode.sourceInstanceName === 'products') {
-			slug = `/product/${frontmatter.title}`
+
+			slug = `/product/${slugify(frontmatter.title,  {
+				lower: true
+			})}-${node.id.split('-')[0]}`
 			createNodeField({
 				node,
 				name: 'slug',
