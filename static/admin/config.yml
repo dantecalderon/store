@@ -3,7 +3,7 @@ backend:
   repo: dantecalderon/store  
 
 media_folder: content/uploads
-public_folder: /static/uploads
+public_folder: /uploads
 
 collections:
   - name: shirts

@@ -59,6 +59,8 @@ exports.createPages = ({ graphql, actions }) => {
 				})
 			})
 
+
+
 			return resolve()
 		})
 
@@ -84,6 +86,11 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
 				node,
 				name: 'slug',
 				value: slug
+			})
+			createNodeField({
+				node,
+				name: 'image',
+				value: `.${frontmatter.thumbnail}`
 			})
 		}
 	}

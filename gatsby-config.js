@@ -48,6 +48,8 @@ module.exports = {
       	enableIdentityWidget: true,
     	},
 		},
+    'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
 		'gatsby-plugin-styled-components',
 	]
 }
