@@ -5,7 +5,14 @@ module.exports = {
 		  resolve: 'gatsby-source-filesystem',
 		  options: {
 		    name: 'products',
-		    path: `${__dirname}/content/`
+		    path: `${__dirname}/content/products/`
+		  }
+		},
+		{
+		  resolve: 'gatsby-source-filesystem',
+		  options: {
+		    name: 'uploads',
+		    path: `${__dirname}/content/uploads/`
 		  }
 		},
 		{
