@@ -1,6 +1,7 @@
 const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
+const slash = require('slash')
 const slugify = require('slugify')
 
 exports.createPages = ({ graphql, actions }) => {
@@ -18,6 +19,9 @@ exports.createPages = ({ graphql, actions }) => {
 					) {
 						edges {
 							node {
+								fields {
+									slug
+								}
 								frontmatter {
 				          path
 				          title
@@ -37,7 +41,22 @@ exports.createPages = ({ graphql, actions }) => {
 			}
 
 			const products = _.filter(result.data.allMarkdownRemark.edges, edge => {
-				return edge
+				const slug = _.get(edge, 'node.fields.slug')
+				if(!slug) return undefined	
+				if(_.includes(slug, '/product/')) {
+					return edge					
+				}
+				return undefined
+			})
+
+			products.forEach((edge, index) => {
+				createPage({
+					path: edge.node.fields.slug,
+					component: slash(ProductTemplate),
+					context: {
+						slug: edge.node.fields.slug						
+					}
+				})
 			})
 
 			return resolve()
@@ -51,6 +70,7 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
 	const { frontmatter } = node
 
 	let slug
+
 	if(node.internal.type === 'MarkdownRemark') {
 		const fileNode = getNode(node.parent)
 		if(fileNode.sourceInstanceName === 'products') {
