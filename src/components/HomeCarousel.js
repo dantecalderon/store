@@ -1,15 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Slider from 'react-slick'
+import Img from 'gatsby-image'
 
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
-import img1 from '../assets/images/home_carousel/carousel1.jpg'
-import img2 from '../assets/images/home_carousel/carousel2.jpg'
-import img3 from '../assets/images/home_carousel/carousel3.jpeg'
-import img4 from '../assets/images/home_carousel/carousel4.jpg'
-import img5 from '../assets/images/home_carousel/carousel5.jpg'
 
 const Container = styled.div`
 	background: #f9f2e8;
@@ -34,19 +29,19 @@ export default props => {
 		<Container>
 			<Slider { ...settings }>
 				<Item>
-				  <img src={img1}/>
+				  <Img fluid={ props.images.carousel1.childImageSharp.fluid} />
 				</Item>
 				<Item>
-				   <img src={img2}/>
+				  <Img fluid={ props.images.carousel2.childImageSharp.fluid} />
 				</Item>
 				<Item>
-				   <img src={img3}/>
+				  <Img fluid={ props.images.carousel3.childImageSharp.fluid} />
 				</Item>
 				<Item>
-				   <img src={img4}/>
+				  <Img fluid={ props.images.carousel4.childImageSharp.fluid} />
 				</Item>
 				<Item>
-				   <img src={img5}/>
+				  <Img fluid={ props.images.carousel5.childImageSharp.fluid} />
 				</Item>			
 			</Slider>
 		</Container>
