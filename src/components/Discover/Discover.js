@@ -22,9 +22,10 @@ const Title = styled.h3`
 
 const CategoriesWrapper = styled.section`
 	justify-content: center;
+	width: 100%;
 `
 
-export default () => (
+export default props => (
 	<Container>
 		<Wrapper
 			flexDirection='column'>
@@ -34,19 +35,19 @@ export default () => (
 					<Category
 						title='Trajes' 
 						to='/ternos'
-						image={ ternos } />
+						image={ props.images.img1 } />
 				</div>
 				<div className="pure-u-1-1 pure-u-sm-19-24 pure-u-md-1-3">
 					<Category
 						title='Camisas' 
 						to='/camisas'
-						image={ camisas } />
+						image={ props.images.img2 } />
 				</div>
 				<div className="pure-u-1-1 pure-u-sm-19-24 pure-u-md-1-3">
 					<Category
 						title='Corbatas' 
 						to='/corbatas'
-						image={ corbatas } />
+						image={ props.images.img3 } />
 				</div>
 			</CategoriesWrapper>
 

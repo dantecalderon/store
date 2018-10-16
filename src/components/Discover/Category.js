@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -32,7 +33,7 @@ const Button = styled(Link)`
 export default props => (
 	<Container>
 		<ImageWrapper>
-			<img src={ props.image } />
+			<Img fluid={ props.image.childImageSharp.fluid } />
 		</ImageWrapper>
 		<Title>{ props.title }</Title>
 		<Button to={ props.to }>DESCUBRIR »</Button>
