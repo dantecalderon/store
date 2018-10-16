@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import Layout from '../components/Layouts/Default'
 
 export default props => {
@@ -13,7 +15,7 @@ export default props => {
 			<p>{ product.frontmatter.price }</p>
 			<p>{ product.frontmatter.color }</p>
 			<p>{ product.frontmatter.categories }</p>
-		{/**	<img src={ product.frontmatter.thumbnail }/>			**/}
+			<Img fluid={ product.fields.image.childImageSharp.fluid } />
 		</Layout>
 	)	
 }
@@ -24,6 +26,13 @@ export const pageQuery = graphql`
 			htmlAst
 			fields {
 				slug
+				image {
+					childImageSharp {
+					  fluid(maxWidth: 1000, quality: 100) {
+					  	...GatsbyImageSharpFluid
+					  }
+					}
+				}
 			}
 			frontmatter {
 				title
