@@ -6,14 +6,12 @@ import Wrapper from '../components/Wrapper'
 import Form from '../components/Contact/Form'
 import Information from '../components/Contact/Information'
 import Maps from '../components/Contact/Maps'
+import Background from '../components/BackgroundImage'
 
-import backgroundHeader from '../assets/images/contact/background.jpg'
-
-const HeaderContainer = styled.div`
-	background: url(${backgroundHeader});
+const HeaderContainer = styled(Background)`	
 	text-align: center;
-	background-size: cover;
-  background-position: center center;
+	padding: 90px 0;
+	background-color: rgba(0, 0, 0, .4);
 `
 
 const Title = styled.h1`
@@ -29,12 +27,6 @@ const Subtitle = styled.h2`
 	color: white;
 	font-size: 21px;
 	font-weight: 400;
-`
-
-const HeaderContent = styled.div`
-	background: rgba(0, 0, 0, 0.31);
-	padding: 140px 0 70px;
-	text-shadow: 0 1px 2px #101820;	
 `
 
 const InformationWrapper = styled.div`
@@ -55,11 +47,9 @@ class Contacto extends React.Component {
 	render() {
 		return (
 			<Layout>
-				<HeaderContainer>
-					<HeaderContent>
+				<HeaderContainer background={ this.props.data.backgroundHeader }>					
 						<Title>Contactanos</Title>					
 						<Subtitle>Estamos listos para ayudarlo en cualquier momento.</Subtitle>
-					</HeaderContent>
 				</HeaderContainer>
 				<TitleSection>Póngase en contacto con nosotros</TitleSection>
 				<Wrapper>
@@ -75,3 +65,15 @@ class Contacto extends React.Component {
 }
 
 export default Contacto
+
+export const pageQuery = graphql`
+	query {	
+		backgroundHeader: file(relativePath: { eq: "images/contact/background.jpg" }) {
+	    childImageSharp {
+	      fluid(maxWidth: 1920, quality: 100){
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  }
+	}
+`

@@ -1,19 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 import Layout from '../components/Layouts/Default'
 import Wrapper from '../components/Wrapper'
 import Video from '../components/Video'
+import Background from '../components/BackgroundImage'
 import backgroundHeader from '../assets/images/about/maquina-de-coser-by-annie-spratt.jpg'
 import tools from '../assets/images/about/tools.jpg'
 import tela from '../assets/images/about/tela.jpg'
 
-const HeaderContainer = styled.div`
-	background: url(${backgroundHeader});	
+const HeaderContainer = styled(Background)`
 	text-align: center;
-	background-size: cover;
-  background-position: center center;
 `
 
 const Title = styled.h1`
@@ -79,7 +78,7 @@ const Button = styled(Link)`
 	margin-bottom: 15px;	
 `
 
-const VideoContainer = styled.div`
+const VideoContainer = styled(Background)`
 	padding-top: 35px;
 	padding-bottom: 35px;
 	position: relative;
@@ -89,10 +88,8 @@ const VideoContainer = styled.div`
 		left: 0;
 		right: 0;
 		top: 0;
-		bottom: 0;
-		background: url(${backgroundHeader});
-		background-size: cover;
-		background-position: center center;
+		bottom: 0;		
+		z-index: 10;	
 		filter: blur(6px);
 	}
 
@@ -102,7 +99,7 @@ class Nosotros extends React.Component {
 	render() {		
 		return (
 			<Layout>
-				<HeaderContainer>
+				<HeaderContainer background={ this.props.data.backgroundHeader }>
 					<Title>ACERCA DE NOSOTROS</Title>
 				</HeaderContainer>
 				
@@ -110,7 +107,7 @@ class Nosotros extends React.Component {
 					<p><span>M</span><b>odas Elegant</b> contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. <b>Richard McClintock</b>, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus <b>Bonorum</b> et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32</p>
 					<p> El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por <b>Cicero</b> son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>		
 				</AboutText>
-				<VideoContainer>
+				<VideoContainer background={ this.props.data.backgroundVideo }>
 					<div className="background">
 					</div>
 					<Video/>
@@ -120,7 +117,7 @@ class Nosotros extends React.Component {
 					flexDirection='column'>
 					<Section className='pure-g'>
 						<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>
-							<img src={ tools }/>				
+							<Img fluid={ this.props.data.img1.childImageSharp.fluid }/>				
 						</div>
 						<SectionContentutil className='pure-u-1-1 pure-u-lg-1-2'>
 							<SectionTitle>Fabricación propia</SectionTitle>
@@ -133,8 +130,8 @@ class Nosotros extends React.Component {
 							<SectionDescription>Ofrecemos una forma sostenible de ordenar y vestir moda. Todas nuestras emisiones de CO2 se compensan al 100% al sembrar un nuevo bosque lluvioso en Sri Lanka, lo que hace que la compañía sea neutral en carbono. Nuestras instalaciones de producción están revisadas y certificadas por GOTS (Global Organic Textile Standard) que garantiza estándares muy altos, tanto social como ambientalmente. Un beneficio adicional es que nuestra ropa no es "moda rápida", sino algo que se puede usar año tras año.</SectionDescription>
 								<Button>Leer mas »</Button>
 						</SectionContentutil>
-						<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>
-							<img src={ tela }/>				
+						<div className='pure-u-1-1 pure-u-sm-19-24 pure-u-md-17-24 pure-u-lg-1-2'>						
+							<Img fluid={ this.props.data.img2.childImageSharp.fluid }/>
 						</div>
 					</Section>
 				</Wrapper>
@@ -144,3 +141,36 @@ class Nosotros extends React.Component {
 }
 
 export default Nosotros
+
+export const pageQuery = graphql`
+	query {	
+		backgroundHeader: file(relativePath: { eq: "images/about/maquina-de-coser-by-annie-spratt.jpg" }) {
+	    childImageSharp {
+	      fluid(maxWidth: 1920, quality: 100){
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  }
+	  backgroundVideo: file(relativePath: { eq: "images/about/video.jpg" }) {
+	    childImageSharp {
+	      fluid(maxWidth: 1920, quality: 100){
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  }
+	  img1: file(relativePath: { eq: "images/about/tools.jpg" }) {
+	    childImageSharp {
+	      fluid(maxWidth: 1920, quality: 100){
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  }
+	  img2: file(relativePath: { eq: "images/about/tela.jpg" }) {
+	    childImageSharp {
+	      fluid(maxWidth: 1920, quality: 100){
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  }
+	}
+`
