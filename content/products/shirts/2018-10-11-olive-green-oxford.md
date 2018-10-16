@@ -10,7 +10,7 @@ sizes:
   - s
   - xs
   - m
-thumbnail: /static/uploads/12464-herrskjorta-caucel-navy.jpg
+thumbnail: /uploads/12464-herrskjorta-caucel-navy.jpg
 ---
 Una camisa de elegancia cotidiana, cosida en tejido de dobby con un patrón a
 cuadros en el tejido. La técnica de tejido de este tejido de algodón crea una

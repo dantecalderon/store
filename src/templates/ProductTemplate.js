@@ -13,7 +13,7 @@ export default props => {
 			<p>{ product.frontmatter.price }</p>
 			<p>{ product.frontmatter.color }</p>
 			<p>{ product.frontmatter.categories }</p>
-			<img src={ product.frontmatter.thumbnail }/>			
+		{/**	<img src={ product.frontmatter.thumbnail }/>			**/}
 		</Layout>
 	)	
 }
@@ -30,8 +30,7 @@ export const pageQuery = graphql`
 				price
 				color
 				categories
-				color
-				thumbnail
+				color				
 			}
 		}
 	}

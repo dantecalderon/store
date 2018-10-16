@@ -7,7 +7,7 @@ categories:
 color: negro
 sizes:
   - s
-thumbnail: /static/uploads/mens-shirt-ramalde-light-blue-320.jpg  
+thumbnail: /uploads/mens-shirt-ramalde-light-blue-320.jpg  
 ---
 Camisa de vestir de mezclilla azul claro en estilo casual de negocios con
 cuello de trabajo, puños redondos y sin tapeta. Obtén esta camiseta hecha a

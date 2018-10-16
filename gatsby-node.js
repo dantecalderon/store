@@ -26,8 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
 				          path
 				          title
 				          price
-				          color
-				          thumbnail
+				          color				          
 				          categories
 				        } 
 							}
@@ -90,7 +89,7 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
 			createNodeField({
 				node,
 				name: 'image',
-				value: `.${frontmatter.thumbnail}`
+				value: `../..${frontmatter.thumbnail}`
 			})
 		}
 	}

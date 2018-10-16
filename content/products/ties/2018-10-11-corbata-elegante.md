@@ -10,6 +10,6 @@ sizes:
   - xs
   - s
   - m
-thumbnail: /static/uploads/mens-shirt-siruela-pink-545-jpg.jpeg
+thumbnail: /uploads/mens-shirt-siruela-pink-545-jpg.jpeg
 ---
 Corbata muy elegante colo negro que le ayudará a verse mejor
